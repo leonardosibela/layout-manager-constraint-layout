@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ConstraintLayout</string>
+    <string name="name_label">Name:</string>
+    <string name="name">Felix Arvid Ulf Kjellberg</string>
+    <string name="nickname_label">Nickname:</string>
+    <string name="nickname">PewDiePie</string>
+    <string name="country_label">Country:</string>
+    <string name="country">Sweden</string>
+    <string name="button_text">Click me</string>
+    <string name="content_description_android_logo">Android logo</string>
 </resources>
