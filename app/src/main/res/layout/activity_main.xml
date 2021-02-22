@@ -17,15 +17,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/android" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/margin_small" />
+
     <TextView
         android:id="@+id/nameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_small"
         android:layout_marginTop="@dimen/margin_medium"
         android:text="@string/name_label"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/vertical_start_guideline"
         app:layout_constraintTop_toBottomOf="@+id/androidLogo" />
 
     <TextView
@@ -42,11 +48,10 @@
         android:id="@+id/nicknameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_small"
         android:layout_marginTop="@dimen/margin_small"
         android:text="@string/nickname_label"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/vertical_start_guideline"
         app:layout_constraintTop_toBottomOf="@+id/nameLabel" />
 
     <TextView
@@ -63,11 +68,10 @@
         android:id="@+id/countryLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_small"
         android:layout_marginTop="@dimen/margin_small"
         android:text="@string/country_label"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/vertical_start_guideline"
         app:layout_constraintTop_toBottomOf="@+id/nicknameLabel" />
 
     <TextView
@@ -101,12 +105,11 @@
         android:id="@+id/stylesLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_small"
         android:layout_marginTop="@dimen/margin_extra_large"
         android:text="@string/styles_label"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/vertical_start_guideline"
         app:layout_constraintTop_toBottomOf="@+id/countryLabel" />
 
     <com.google.android.material.chip.Chip
